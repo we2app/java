@@ -4,4 +4,5 @@ RUN apt-get update && \
     apt-get -y install openjdk-11-jdk-headless && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
-    java -version
+    java -version && \
+    export JAVA_HOME=$(dirname $(dirname $(update-alternatives --list java)))
