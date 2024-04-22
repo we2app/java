@@ -42,6 +42,6 @@ jobs:
           push: true
           tags: |
             we2app/${{ github.event.repository.name }}:latest
-            we2app/${{ github.event.repository.name }}:1.0.0
+            we2app/${{ github.event.repository.name }}:jdk-17
 
           
