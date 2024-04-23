@@ -41,6 +41,7 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm
           push: true
           tags: |
-            we2app/${{ github.event.repository.name }}:jdk-11
+            we2app/${{ github.event.repository.name }}:latest
+            we2app/${{ github.event.repository.name }}:jdk-17
 
           
